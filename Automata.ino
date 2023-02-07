@@ -64,6 +64,7 @@ void displayGen(){
   for (int i = 0; i < width; i++){
     for (int j = 0; j < height; j++){
       if(currGen[i][j] == 1){
+        //If user wants a random value for r, g, b, uncomment this block of code, will make into a function later in a seperate file for quick modification
         /*
         int r = random(0,255);
         int g = random(0, 255);
@@ -72,22 +73,24 @@ void displayGen(){
         */
         int neighbors = countAlive(i, j);
         if(neighbors == 0){
-          setPixel(j, i, 255, 0, 0); 
+          setPixel(j, i, 255, 0, 0); //red
         }
         else if(neighbors == 1){
-          setPixel(j, i, 255, 128, 0); 
+          setPixel(j, i, 255, 128, 0); // gradient, blood orange like color
         }
         else if(neighbors == 2){
-          setPixel(j, i, 255, 200, 0); 
+          setPixel(j, i, 255, 200, 0); //darker orange
         }
         else{
-          setPixel(j, i, 255, 255, 50); 
+          setPixel(j, i, 255, 255, 50); //orange
         }
       }
     }
   }
   
 }
+
+//Function used to randomly generate the first state of the board, and to restart the board after 50 iterations
 void restart(){
   for(int i = 0; i < width; i++){
     for (int j = 0; j < height; j++) {
@@ -96,7 +99,7 @@ void restart(){
   }
 }
 
-int reset = 0;
+int reset = 0; // Initialized reset to be used in void loop()
 void setup() {
  
   Serial.begin(9600);
@@ -117,9 +120,5 @@ void loop() {
   newGeneration();
   displayGen();
   delay(1000);
-  //MATRIX.set(11,6,255,0,0); 
-  //MATRIX.endDraw();
-
-  // put your main code here, to run repeatedly:
 
 }
