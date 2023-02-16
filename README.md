@@ -6,4 +6,7 @@ The hardest part of this project for me was learning how to light up an individu
 
 This project will randomly set the state of a board on the first iteration. There, Conway's Game of Life rules are applied. I added some other functionalities, like randomly changing the color of the pixes or making a gradient style change. For example, if an alive cell has 0 living neighbors, that pixel is red, or if that Living cell has four or more living neighbors, the color is closer to orange.
 
+#DEMO
+![image](https://user-images.githubusercontent.com/112827038/219310849-f0313581-9218-4c5d-99e4-615c634a1f27.png)
+
 
