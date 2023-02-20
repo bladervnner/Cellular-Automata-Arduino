@@ -9,3 +9,4 @@ This project will randomly set the state of a board on the first iteration. Ther
 
 
 ![38BD3DD3-F7E0-4D41-908C-BEC4C20C9425_4_5005_c](https://user-images.githubusercontent.com/112827038/219312991-849d94ee-b67e-42fc-a9af-0a6acbc09a18.jpeg)
+![Automata](https://user-images.githubusercontent.com/112827038/220210555-903dbc6f-bab5-4eca-92b1-eb8958c0e97c.gif)
